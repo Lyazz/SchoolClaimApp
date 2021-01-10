@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="110dp"
+    android:background="@drawable/textarea"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/reclam"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/reclam"        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:text="rid"
+            android:textColor="@color/beige" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:text="prof" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="date" />
+        <TextView
+            android:id="@+id/etat2"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="etat" />
+        <TextView
+            android:id="@+id/etat"
+            android:singleLine="true"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:text="contenu" />
+
+    </LinearLayout>
+</LinearLayout>

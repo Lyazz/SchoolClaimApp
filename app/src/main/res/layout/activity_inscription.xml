@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionActivity">
+
+    <EditText
+        android:id="@+id/champNom"
+        android:layout_width="292dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_nom"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nom*"
+        android:inputType="textPersonName"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/champPrenom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/champPrenom"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_prenom"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Prenom*"
+        android:inputType="textPersonName"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/champMat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champNom" />
+
+    <EditText
+        android:id="@+id/champMat"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_mat"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Login*"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawableStart="@drawable/ic_person_outline_black_24dp"
+        android:inputType="textPersonName"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/champMdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champPrenom" />
+
+    <EditText
+        android:id="@+id/champMdp"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_mdp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mot de passe*"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/champMdp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champMat" />
+
+    <EditText
+        android:id="@+id/champMdp2"
+        android:layout_width="292dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_mdp2"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Confirmer mot de passe*"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champMdp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="121dp"
+        android:layout_height="70dp"
+        android:checkedButton="@+id/RadioEtud"
+        app:layout_constraintBottom_toTopOf="@+id/btnIscr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="410dp"
+
+        <RadioButton
+            android:id="@+id/RadioEtud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/beige"
+            android:text="Etudiant" />
+
+        <RadioButton
+            android:id="@+id/RadioProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/beige"
+            android:text="Professeur" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnIscr"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sinscrire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Inscription"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintBottom_toTopOf="@+id/champNom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*: champs obligatoires."
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champMdp2" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miniprojet.reclamation">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="n'Reclamer"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EcrireReclamation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccueilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DateChercherReclam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InscriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConnexInscription"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PanneauEtudiant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PanneauProfesseur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PanneauAdministrateur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainGestionnaireActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainEtudiant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConsulterListeReclamEtudiant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReclamRecusProf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AfficherReclamCherchee"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ConsulterListeReclamProfesseur" android:screenOrientation="portrait"/>
+        <activity android:name=".GererReclams" android:screenOrientation="portrait" />
+        <activity android:name=".ModififerReclamAdmin" android:screenOrientation="portrait"/>
+        <activity android:name=".ReclamRegleeProf" android:screenOrientation="portrait"/>
+        <activity android:name=".Historique" android:screenOrientation="portrait" />
+        <activity android:name=".About" android:screenOrientation="portrait"/>
+        <activity android:name=".GererUsers" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

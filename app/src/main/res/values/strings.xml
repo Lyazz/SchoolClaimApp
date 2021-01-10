@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Reclamation</string>
+    <string name="edit_login">Inserer votre login</string>
+    <string name="edit_password">motdepass</string>
+    <string name="button_connect">Se connecter</string>
+    <string name="login">Login :</string>
+    <string name="password">Password :</string>
+    <string name="ContenuReclamation">Veuillez ecrire votre reclamation ici.</string>
+    <string name="Admin">Administrateur</string>
+    <string name="Etudiant">Etudiant</string>
+    <string name="Professeur">Professeur</string>
+    <string name="ReclamationDefaultContent">Selectionner le professeur à qui l\'adresser</string>
+</resources>
